@@ -13,7 +13,7 @@ namespace Greetings
         {
             InitializeComponent();
 
-            MainPage = new TwoButtonsPage();
+            MainPage = new ScaryColorListPage();
         }
 
         protected override void OnStart()

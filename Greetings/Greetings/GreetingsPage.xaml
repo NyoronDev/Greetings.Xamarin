@@ -5,10 +5,9 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
             <Frame>
-                <Label Text="Greetings, Xamarin.Forms!" />    
-            </Frame>
-            <Frame>
-                <Label Text="Greetings, Xamarin.Forms! 2" />
+                <Frame.Content>
+                    <Label Text="Greetings, Xamarin.Forms!" />
+                </Frame.Content>
             </Frame>
         </StackLayout>
     </ContentPage.Content>

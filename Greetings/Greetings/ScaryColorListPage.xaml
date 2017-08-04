@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Greetings.ScaryColorListPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="Android, WinPhone">0</On>
+            <On Platform="iOS">0,20,0,0</On>
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ScrollView>
+        <StackLayout>
+            <Frame OutlineColor="Accent">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.Children>
+                        <BoxView Color="Red" />
+                        <Label Text="Red" VerticalOptions="Center" />
+                    </StackLayout.Children>
+                </StackLayout>
+            </Frame>
+            <Frame OutlineColor="Accent">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.Children>
+                        <BoxView Color="Green" />
+                        <Label Text="Green" VerticalOptions="Center" />
+                    </StackLayout.Children>
+                </StackLayout>
+            </Frame>
+            <Frame OutlineColor="Accent">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.Children>
+                        <BoxView Color="Blue" />
+                        <Label Text="Blue" VerticalOptions="Center" />
+                    </StackLayout.Children>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
