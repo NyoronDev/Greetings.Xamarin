@@ -55,6 +55,15 @@
     </Compile>
     <Compile Include="9- Platform-specific API calls\IPlatformInfo.cs" />
     <Compile Include="10- XAML markup extensions\AppConstants.cs" />
+    <Compile Include="12- Styles\BasicStylePage.xaml.cs">
+      <DependentUpon>BasicStylePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="12- Styles\DeviceStylesListPage.xaml.cs">
+      <DependentUpon>DeviceStylesListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="12- Styles\ImplicitStylePage.xaml.cs">
+      <DependentUpon>ImplicitStylePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -195,7 +204,12 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="12- Styles\BasicStylePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="10- XAML markup extensions\SharedStaticsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -210,6 +224,19 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="10- XAML markup extensions\ResourceSharingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="12- Styles\ImplicitStylePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="12- Styles\DeviceStylesListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

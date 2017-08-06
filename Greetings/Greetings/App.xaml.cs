@@ -15,7 +15,7 @@ namespace Greetings
         {
             InitializeComponent();
 
-            MainPage = new ResourceSharingPage();
+            MainPage = new DeviceStylesListPage();
         }
 
         protected override void OnStart()
