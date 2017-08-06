@@ -15,7 +15,7 @@ namespace Greetings
         {
             InitializeComponent();
 
-            MainPage = new PlatInfoSapPage();
+            MainPage = new ResourceSharingPage();
         }
 
         protected override void OnStart()

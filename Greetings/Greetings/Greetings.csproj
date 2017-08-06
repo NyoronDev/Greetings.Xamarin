@@ -54,6 +54,7 @@
       <DependentUpon>GreetingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="9- Platform-specific API calls\IPlatformInfo.cs" />
+    <Compile Include="10- XAML markup extensions\AppConstants.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -81,6 +82,15 @@
     </Compile>
     <Compile Include="8- Code and XAML in harmony\XamlKeypadPage.xaml.cs">
       <DependentUpon>XamlKeypadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="10- XAML markup extensions\ResourceSharingPage.xaml.cs">
+      <DependentUpon>ResourceSharingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="10- XAML markup extensions\SharedStaticsPage.xaml.cs">
+      <DependentUpon>SharedStaticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="10- XAML markup extensions\SystemStaticsPage.xaml.cs">
+      <DependentUpon>SystemStaticsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +191,25 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="9- Platform-specific API calls\PlatInfoSapPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="10- XAML markup extensions\SharedStaticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="10- XAML markup extensions\SystemStaticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="10- XAML markup extensions\ResourceSharingPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

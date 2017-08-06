@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Greetings.ResourceSharingPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <LayoutOptions x:Key="horzOptions">Center</LayoutOptions>
+            <LayoutOptions x:Key="vertOptions" Alignment="Center" Expands="True" />
+
+            <x:Double x:Key="borderWidth">3</x:Double>
+            <Color x:Key="textColor">Red</Color>
+
+            <OnPlatform x:Key="backgroundColor" x:TypeArguments="Color" Android="#404040" />
+            <OnPlatform x:Key="borderColor" x:TypeArguments="Color" Android="White" WinPhone="Black" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Button Text=" Carpe diem ">
+            <Button.HorizontalOptions>
+                <StaticResourceExtension Key="horzOptions" />
+            </Button.HorizontalOptions>
+            <Button.VerticalOptions>
+                <StaticResourceExtension Key="vertOptions" />
+            </Button.VerticalOptions>
+            <Button.BorderWidth>
+                <StaticResourceExtension Key="borderWidth" />
+            </Button.BorderWidth>
+            <Button.TextColor>
+                <StaticResourceExtension Key="textColor" />
+            </Button.TextColor>
+            <Button.BackgroundColor>
+                <StaticResourceExtension Key="backgroundColor" />
+            </Button.BackgroundColor>
+        </Button>
+
+        <Button Text=" Sapere aude " HorizontalOptions="{StaticResource Key=horzOptions}" VerticalOptions="{StaticResource Key=vertOptions}"
+                BorderWidth="{StaticResource Key=borderWidth}" TextColor="{StaticResource Key=textColor}" />
+
+        <Button Text=" Discere faciendo " HorizontalOptions="{StaticResource horzOptions}" VerticalOptions="{StaticResource vertOptions}" />
+    </StackLayout>
+</ContentPage>
