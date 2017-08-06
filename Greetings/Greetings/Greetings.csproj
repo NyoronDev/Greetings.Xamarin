@@ -101,6 +101,10 @@
     <Compile Include="10- XAML markup extensions\SystemStaticsPage.xaml.cs">
       <DependentUpon>SystemStaticsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="13- Bitmap\WebBitmapCodePage.cs" />
+    <Compile Include="13- Bitmap\WebBitmapXamlPage.xaml.cs">
+      <DependentUpon>WebBitmapXamlPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -228,7 +232,12 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="13- Bitmap\WebBitmapXamlPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="12- Styles\ImplicitStylePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

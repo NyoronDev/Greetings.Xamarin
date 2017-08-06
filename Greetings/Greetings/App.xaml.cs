@@ -15,7 +15,7 @@ namespace Greetings
         {
             InitializeComponent();
 
-            MainPage = new DeviceStylesListPage();
+            MainPage = new WebBitmapXamlPage();
         }
 
         protected override void OnStart()
