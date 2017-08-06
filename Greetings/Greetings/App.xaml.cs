@@ -9,11 +9,13 @@ namespace Greetings
 {
     public partial class App : Application
     {
+        public string DisplayLabelText { get; set; }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new ScaryColorListPage();
+            MainPage = new MonkeyTapPage();
         }
 
         protected override void OnStart()
