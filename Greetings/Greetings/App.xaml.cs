@@ -15,7 +15,7 @@ namespace Greetings
         {
             InitializeComponent();
 
-            MainPage = new MonkeyTapPage();
+            MainPage = new PlatInfoSapPage();
         }
 
         protected override void OnStart()

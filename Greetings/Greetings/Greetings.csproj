@@ -38,44 +38,48 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ButtonLoggerPage.xaml.cs">
+    <Compile Include="6- Button clicks\ButtonLoggerPage.xaml.cs">
       <DependentUpon>ButtonLoggerPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CodePlusXamlPage.xaml.cs">
+    <Compile Include="7- XAML vs Code\CodePlusXamlPage.xaml.cs">
       <DependentUpon>CodePlusXamlPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ColorView.xaml.cs">
+    <Compile Include="8- Code and XAML in harmony\ColorView.xaml.cs">
       <DependentUpon>ColorView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ColorViewListPage.xaml.cs">
+    <Compile Include="8- Code and XAML in harmony\ColorViewListPage.xaml.cs">
       <DependentUpon>ColorViewListPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GreetingsPage.xaml.cs">
+    <Compile Include="2- Anatomy of an App\GreetingsPage.xaml.cs">
       <DependentUpon>GreetingsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="9- Platform-specific API calls\IPlatformInfo.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MonkeyTapPage.xaml.cs">
+    <Compile Include="8- Code and XAML in harmony\MonkeyTapPage.xaml.cs">
       <DependentUpon>MonkeyTapPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ParameteredConstructorDemoPage.xaml.cs">
+    <Compile Include="8- Code and XAML in harmony\ParameteredConstructorDemoPage.xaml.cs">
       <DependentUpon>ParameteredConstructorDemoPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PlatformSpecificLabelsPage.xaml.cs">
+    <Compile Include="8- Code and XAML in harmony\PlatformSpecificLabelsPage.xaml.cs">
       <DependentUpon>PlatformSpecificLabelsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="9- Platform-specific API calls\PlatInfoSapPage.xaml.cs">
+      <DependentUpon>PlatInfoSapPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScaryColorListPage.xaml.cs">
+    <Compile Include="7- XAML vs Code\ScaryColorListPage.xaml.cs">
       <DependentUpon>ScaryColorListPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TwoButtonsPage.xaml.cs">
+    <Compile Include="6- Button clicks\TwoButtonsPage.xaml.cs">
       <DependentUpon>TwoButtonsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XamlClockPage.xaml.cs">
+    <Compile Include="8- Code and XAML in harmony\XamlClockPage.xaml.cs">
       <DependentUpon>XamlClockPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XamlKeypadPage.xaml.cs">
+    <Compile Include="8- Code and XAML in harmony\XamlKeypadPage.xaml.cs">
       <DependentUpon>XamlKeypadPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -104,73 +108,79 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GreetingsPage.xaml">
+    <EmbeddedResource Include="2- Anatomy of an App\GreetingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ButtonLoggerPage.xaml">
+    <EmbeddedResource Include="6- Button clicks\ButtonLoggerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="TwoButtonsPage.xaml">
+    <EmbeddedResource Include="6- Button clicks\TwoButtonsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CodePlusXamlPage.xaml">
+    <EmbeddedResource Include="7- XAML vs Code\CodePlusXamlPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ScaryColorListPage.xaml">
+    <EmbeddedResource Include="7- XAML vs Code\ScaryColorListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ParameteredConstructorDemoPage.xaml">
+    <EmbeddedResource Include="8- Code and XAML in harmony\ParameteredConstructorDemoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="XamlClockPage.xaml">
+    <EmbeddedResource Include="8- Code and XAML in harmony\XamlClockPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="PlatformSpecificLabelsPage.xaml">
+    <EmbeddedResource Include="8- Code and XAML in harmony\PlatformSpecificLabelsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ColorView.xaml">
+    <EmbeddedResource Include="8- Code and XAML in harmony\ColorView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ColorViewListPage.xaml">
+    <EmbeddedResource Include="8- Code and XAML in harmony\ColorViewListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="XamlKeypadPage.xaml">
+    <EmbeddedResource Include="8- Code and XAML in harmony\XamlKeypadPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MonkeyTapPage.xaml">
+    <EmbeddedResource Include="8- Code and XAML in harmony\MonkeyTapPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="9- Platform-specific API calls\PlatInfoSapPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
