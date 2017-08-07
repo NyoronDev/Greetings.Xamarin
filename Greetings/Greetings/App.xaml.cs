@@ -15,7 +15,7 @@ namespace Greetings
         {
             InitializeComponent();
 
-            MainPage = new WebBitmapXamlPage();
+            MainPage = new SimpleOverlayPage();
         }
 
         protected override void OnStart()
