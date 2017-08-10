@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Greetings.EntryKeyboardsPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="10, 20, 10, 0" Android="10, 0" WinPhone="10, 0" />
+    </ContentPage.Padding>
+
+    <ScrollView>
+        <StackLayout>
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="Entry">
+                        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+
+            <!-- Default -->
+            <Entry Placeholder="Default" Keyboard="Default" />
+            
+            <!-- Text -->
+            <Entry Placeholder="Text" Keyboard="Text" />
+            
+            <!-- Chat -->
+            <Entry Placeholder="Chat" Keyboard="Chat" />
+            
+            <!-- Url -->
+            <Entry Placeholder="Url" Keyboard="Url" />
+            
+            <!-- Email -->
+            <Entry Placeholder="Email" Keyboard="Email" />
+            
+            <!-- Telephone -->
+            <Entry Placeholder="Telephone" Keyboard="Telephone" />
+            
+            <!-- Numeric -->
+            <Entry Placeholder="Numeric" Keyboard="Numeric" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

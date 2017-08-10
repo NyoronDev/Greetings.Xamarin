@@ -15,7 +15,7 @@ namespace Greetings
         {
             InitializeComponent();
 
-            MainPage = new SimpleOverlayPage();
+            MainPage = new SetTimerPage();
         }
 
         protected override void OnStart()
