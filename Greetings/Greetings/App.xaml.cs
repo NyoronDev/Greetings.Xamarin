@@ -15,7 +15,7 @@ namespace Greetings
         {
             InitializeComponent();
 
-            MainPage = new SetTimerPage();
+            MainPage = new GridBarChartPage();
         }
 
         protected override void OnStart()
