@@ -83,6 +83,21 @@
     <Compile Include="18- MVVM\HslSlidersPage.xaml.cs">
       <DependentUpon>HslSlidersPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="19- Collection Views\ColorGroupListPage.xaml.cs">
+      <DependentUpon>ColorGroupListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="19- Collection Views\CustomNamedColorListPage.xaml.cs">
+      <DependentUpon>CustomNamedColorListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="19- Collection Views\EntryFormPage.xaml.cs">
+      <DependentUpon>EntryFormPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="19- Collection Views\InteractiveListViewPage.xaml.cs">
+      <DependentUpon>InteractiveListViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="19- Collection Views\ListViewLoggerPage.xaml.cs">
+      <DependentUpon>ListViewLoggerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -107,6 +122,15 @@
     </Compile>
     <Compile Include="18- MVVM\PowersOfThreePage.xaml.cs">
       <DependentUpon>PowersOfThreePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="19- Collection Views\NaiveNamedColorListPage.xaml.cs">
+      <DependentUpon>NaiveNamedColorListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="19- Collection Views\ObservableLoggerPage.xaml.cs">
+      <DependentUpon>ObservableLoggerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="19- Collection Views\PickerDemoPage.xaml.cs">
+      <DependentUpon>PickerDemoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="7- XAML vs Code\ScaryColorListPage.xaml.cs">
@@ -170,12 +194,17 @@
     <Compile Include="18- MVVM\SimpleMultiplierPage.xaml.cs">
       <DependentUpon>SimpleMultiplierPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="19- Collection Views\TextCellListCodePage.cs" />
+    <Compile Include="Toolkit\ColorToContrastColorConverter.cs" />
     <Compile Include="Toolkit\IntToBoolConverter.cs" />
     <Compile Include="16- Binding\WebViewDemoPage.xaml.cs">
       <DependentUpon>WebViewDemoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Toolkit\NamedColor.cs" />
+    <Compile Include="Toolkit\NamedColorGroup.cs" />
     <Compile Include="ViewModel\ColorViewModel.cs" />
     <Compile Include="ViewModel\DateTimeViewModel.cs" />
+    <Compile Include="ViewModel\PersonalInformationViewModel.cs" />
     <Compile Include="ViewModel\PowersViewModel.cs" />
     <Compile Include="ViewModel\SimpleMultiplierViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
@@ -452,6 +481,54 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="18- MVVM\PowersOfThreePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="19- Collection Views\PickerDemoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="19- Collection Views\ListViewLoggerPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="19- Collection Views\ObservableLoggerPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="19- Collection Views\NaiveNamedColorListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="19- Collection Views\CustomNamedColorListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="19- Collection Views\ColorGroupListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="19- Collection Views\InteractiveListViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="19- Collection Views\EntryFormPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

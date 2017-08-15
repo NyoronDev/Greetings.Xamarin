@@ -15,7 +15,7 @@ namespace Greetings
         {
             InitializeComponent();
 
-            MainPage = new PowersOfThreePage();
+            MainPage = new EntryFormPage();
         }
 
         protected override void OnStart()
