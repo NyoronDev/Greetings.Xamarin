@@ -80,6 +80,9 @@
     <Compile Include="17- Grids\GridBarChartPage.xaml.cs">
       <DependentUpon>GridBarChartPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="18- MVVM\HslSlidersPage.xaml.cs">
+      <DependentUpon>HslSlidersPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -98,6 +101,12 @@
     <Compile Include="16- Binding\OpacityBindingCodePage.cs" />
     <Compile Include="16- Binding\OpacityBindingXamlPage.xaml.cs">
       <DependentUpon>OpacityBindingXamlPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="18- MVVM\MvvmClockPage.xaml.cs">
+      <DependentUpon>MvvmClockPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="18- MVVM\PowersOfThreePage.xaml.cs">
+      <DependentUpon>PowersOfThreePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="7- XAML vs Code\ScaryColorListPage.xaml.cs">
@@ -158,10 +167,18 @@
     <Compile Include="17- Grids\SimpleGridDemoPage.xaml.cs">
       <DependentUpon>SimpleGridDemoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="18- MVVM\SimpleMultiplierPage.xaml.cs">
+      <DependentUpon>SimpleMultiplierPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Toolkit\IntToBoolConverter.cs" />
     <Compile Include="16- Binding\WebViewDemoPage.xaml.cs">
       <DependentUpon>WebViewDemoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\ColorViewModel.cs" />
+    <Compile Include="ViewModel\DateTimeViewModel.cs" />
+    <Compile Include="ViewModel\PowersViewModel.cs" />
+    <Compile Include="ViewModel\SimpleMultiplierViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -415,6 +432,31 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="18- MVVM\MvvmClockPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="18- MVVM\SimpleMultiplierPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="18- MVVM\HslSlidersPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="18- MVVM\PowersOfThreePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

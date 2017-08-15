@@ -15,7 +15,7 @@ namespace Greetings
         {
             InitializeComponent();
 
-            MainPage = new GridBarChartPage();
+            MainPage = new PowersOfThreePage();
         }
 
         protected override void OnStart()
